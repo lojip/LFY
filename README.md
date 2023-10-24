@@ -1,3 +1,7 @@
+![logo](https://github.com/lojip/Links-React/assets/134970074/10635042-70c4-4f9f-890c-f70c975198fc)
+
+
+
 # Проект "LFY" (версия 0.2)
 
 ## Добавлено в версии 0.2
