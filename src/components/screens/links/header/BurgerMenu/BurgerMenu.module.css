@@ -1,0 +1,124 @@
+/* navBarContainer */
+
+.navBarContainer {
+    position: relative;
+}
+
+
+/* burger icon */
+
+.burgerIcon {
+    position: fixed;
+    top: .84rem;
+    right: 1rem;
+    z-index: 101;
+    cursor: pointer;
+}
+
+
+.burgerIcon.openIcon .bar:nth-child(1) {
+    transform: translateY(.56rem) rotate(45deg);
+    border-radius: 1rem;
+}
+
+.burgerIcon.openIcon .bar:nth-child(2) {
+    transform: scale(0);
+}
+
+.burgerIcon.openIcon .bar:nth-child(3) {
+    transform: translateY(-.56rem) rotate(-45deg);
+    border-radius: 1rem;
+}
+
+
+/* bar */
+
+.bar {
+    border-radius: 10%;
+    width: 2rem;
+    height: .2rem;
+    background-color: #fff;
+    margin: 0.4rem 0;
+    transition: transform .3s ease-out, scale .2s linear;
+}
+
+
+/* burger menu */
+
+.burgerMenu {
+    position: absolute;
+    top: -1.8rem;
+    right: -18rem;
+    z-index: 100;
+    width: 12rem;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.5);
+    transition: right 0.3s ease-in-out;
+}
+
+/* menu items */
+
+.menuItems {
+    height: 100%;
+    list-style: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuItems li {
+    width: 100%;
+    height: 3rem;
+    /* border-radius: .5rem; */
+    transition: background .2s ease-out;
+}
+
+.menuItems li:hover {
+    background: rgba(34, 34, 34, 0.5);
+}
+
+
+/* open menu */
+
+.openMenu {
+    right: -1.3rem;
+}
+
+
+
+/* button styles */
+
+
+.btn {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 340px) {
+    .burgerMenu {
+        position: absolute;
+        top: -1.8rem;
+        right: -30rem;
+        z-index: 100;
+        width: 135vh;
+        height: 100vh;
+        background: rgba(34, 34, 34, 0.5);
+        transition: right 0.3s ease-in-out;
+    }
+
+    .openMenu {
+        right: -1rem;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+}
