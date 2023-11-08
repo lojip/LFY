@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-size: 20px;
+    background-color: #363636;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+#root {
+    margin: 0;
+    display: grid;
+    /* grid-template-rows: auto 1fr auto; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.button {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 0;
+    width: 6rem;
+    height: 2rem;
+    font-size: 16px;
+    border-radius: .4rem;
+    color: white;
+    background: #dc3545;
+    border: none;
+    transition: opacity .2s linear;
+}
+
+.button:hover {
+    opacity: .7;
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .section {
+        padding: 0 10px 10px 10px;
+    }
+}

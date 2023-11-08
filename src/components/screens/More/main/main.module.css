@@ -1,0 +1,17 @@
+.section {
+    border-radius: 1rem;
+    margin: 10rem 0 2rem 0;
+    background: #222222;
+    padding: 1rem .5rem;
+}
+
+
+.title {
+    padding: 0 .5rem .5rem;
+}
+
+.OlLink {
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}

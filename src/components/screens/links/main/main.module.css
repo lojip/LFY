@@ -1,0 +1,44 @@
+.section {
+    border-radius: 1rem;
+    margin-top: 5rem;
+    background: #222222;
+    padding: 1rem .5rem;
+}
+
+
+.section:first-child {
+    margin-top: 10rem;
+}
+
+.section:last-child {
+    margin-bottom: 5rem;
+}
+
+.title {
+    padding: 0 .5rem 1rem;
+}
+
+.notFound {
+    padding: 1rem .5rem;
+}
+
+.link {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.olLink {
+    margin: .5rem 2rem;
+    min-height: 0;
+    min-width: 80px;
+}
+
+.OlLink {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
